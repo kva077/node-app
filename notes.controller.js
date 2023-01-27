@@ -47,7 +47,7 @@ async function editNote(id, result) {
   const index = notes.findIndex((n) => n.id === id);
   notes[index].title = result;
   await saveNotes(notes);
-  console.log(chalk.red(`Note "${index}" with id=${id} has been edited.`));
+  console.log(chalk.red(`Note with id=${id} has been edited.`));
 }
 
 module.exports = {
